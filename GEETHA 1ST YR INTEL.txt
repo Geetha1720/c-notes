@@ -1,0 +1,87 @@
+HELLO WORLD
+//first c++ program CODE:
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    cout<<"hello world";
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------
+TO ENTER UR REG NO
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a=18;
+    cout<<"enter your reg no:"<<a;
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------
+
+TO ENTER REG NO WITH CIN
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a;
+    cout<<"enter your reg no:";
+    cin >>a;
+    cout <<" your reg no is:"<<a;
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------
+
+REG NO URS AND UR FRNDS A AND B
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a;
+    int b;
+    cout<<"enter your reg no:nezuko";
+    cin >>a;
+    cout<<"enter your frnds reg no";
+    cin>>b;
+    cout <<" your reg no is:"<<a;
+    cout<<"your frnd reg no is:"<<b;
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------
+REG NO UR AND UR FRNDS A AND B ENDL
+// to enter register no
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a;
+    int b;
+    cout<<"enter your reg no:nezuko.";
+    cin >>a;
+    cout<<"enter your frnds reg no";
+    cin>>b;
+    cout <<" your reg no is:"<<a<<endl;
+    cout<<"your frnd reg no is:"<<b;
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------
+
+1.int which mean integer: which store integer values(whole no.)i.e 1,2,3,4,5
+2.variables :in c++ are used to store data and manipulated through program
+3.float:used to store decimal values:10.4,10.6
+4.double:(double precision) which mean accurate answer i.e 10.777 etc..
+5.char: used to store single character i.e A,b etc...
+6.STRING: string is a sequence of characters ,usually used to represent text such as words or sentences.
+eg:"hello world"   'hi'

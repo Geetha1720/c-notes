@@ -1,0 +1,192 @@
+switch: IN C++ (29/10/2025)
+
+#include <iostream>
+  using namespace std;
+  int main()
+{
+    int day;
+    cout<<"enter a number(1-7) corresponding to the day of the week :";
+    cin>>day;
+    //switch statement to determine the day of the week
+    switch(day)
+    {
+        case 1:
+        cout<<"monday"<<endl;
+        break;
+        
+        case 2:
+        cout<<"tuesday"<<endl;
+        break;
+        
+        case 3:
+        cout<<"wednesday"<<endl;
+        break;
+        
+        case 4:
+        cout<<"thursday"<<endl;
+        break;
+        
+        case 5:
+        cout<<"friday"<<endl;
+        break;
+        
+        case 6:
+        cout<<"satuarday"<<endl;
+        break;
+        
+        case 7:
+        cout<<"sunday"<<endl;
+        break;
+        
+        default:
+        cout<<"invalid input! please enter a number between 1and7"<<endl;
+        break;
+    }
+    
+    return 0;
+}
+
+
+
+
+#include <iostream>
+  using namespace std;
+  int main()
+{
+    int month;
+    cout<<"enter a number(1-12) corresponding to the month of the year :";
+    cin>>month;
+    //switch statement to determine the month of the year
+    switch(month)
+    {
+        case 1:
+        cout<<"JANUARY"<<endl;
+        break;
+        
+        case 2:
+        cout<<"FEBRuaRY"<<endl;
+        break;
+        
+        case 3:
+        cout<<"MARCH"<<endl;
+        break;
+        
+        case 4:
+        cout<<"APRIL"<<endl;
+        break;
+        
+        case 5:
+        cout<<"MAY"<<endl;
+        break;
+        
+        case 6:
+        cout<<"JUNE"<<endl;
+        break;
+        
+        case 7:
+        cout<<"JULY"<<endl;
+        break;
+        
+        case 8:
+        cout<<"AUGUST"<<endl;
+        break;
+        
+        case 9:
+        cout<<"SEPTEMBER"<<endl;
+        break;
+        
+        case 10:
+        cout<<"OCTOBER"<<endl;
+        break;
+        
+       
+        case 11:
+        cout<<"NOVEMBER"<<endl;
+        break;
+        
+        case 12:
+        cout<<"DECEMBER"<<endl;
+        break;
+        
+        
+        default:
+        cout<<"invalid input! please enter a number between 1and12"<<endl;
+        break;
+    }
+    
+    return 0;
+}
+
+
+
+
+#include <iostream>
+  using namespace std;
+  int main()
+{
+    char month;
+    cout<<"enter a character corresponding to the month of the year(a,b,c,d,e,f,g,h,i,j,k,l,m :";
+    cin>>month;
+    //switch statement to determine the day of the month
+    switch(month)
+    {
+        case 'a':
+        cout<<"JANUARY"<<endl;
+        break;
+        
+        case 'b':
+        cout<<"FEBRuaRY"<<endl;
+        break;
+        
+        case 'c':
+        cout<<"MARCH"<<endl;
+        break;
+        
+        case 'd':
+        cout<<"APRIL"<<endl;
+        break;
+        
+        case 'e':
+        cout<<"MAY"<<endl;
+        break;
+        
+        case 'g':
+        cout<<"JUNE"<<endl;
+        break;
+        
+        case 'h':
+        cout<<"JULY"<<endl;
+        break;
+        
+        case 'i':
+        cout<<"AUGUST"<<endl;
+        break;
+        
+        case 'j':
+        cout<<"SEPTEMBER"<<endl;
+        break;
+        
+        case 'k':
+        cout<<"OCTOBER"<<endl;
+        break;
+        
+       
+        case 'l':
+        cout<<"NOVEMBER"<<endl;
+        break;
+        
+        case 'm':
+        cout<<"DECEMBER"<<endl;
+        break;
+        
+        
+        default:
+        cout<<"invalid input! please enter a number between a,b,c,d,e,f,g,h,i,j,k,l,m"<<endl;
+        break;
+    }
+    
+ 
+   return 0;
+    
+}
+

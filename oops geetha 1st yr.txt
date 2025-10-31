@@ -1,0 +1,725 @@
+oops: object oriented programming
+
+CLASS,PUBLIC,DISPLAY:
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+string brand; // Data member
+int speed; // Data member
+
+// Member function
+void display() {
+cout << "Brand: " << brand << ", Speed: " << speed << " km/h" << endl;
+}
+};
+
+int main() {
+// Creating an object of the class
+Car car1;
+car1.brand = "Toyota";
+car1.speed = 120;
+
+// Accessing member function
+car1.display();
+
+Car car2;
+car2.brand = "tesla";
+car2.speed = 320;
+
+// Accessing member function
+car2.display();
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+string brand; // Data member
+string model;
+int price;
+int year;
+
+// Member function
+void display() {
+cout << "Brand: " << brand<<endl << "model: " << model<<endl << "price:"<<price<<endl<<"year:"<<year << endl;
+}
+
+};
+
+int main() {
+// Creating an object of the class
+Car car1;
+car1.brand = "Toyota";
+car1.model="b-class" ;
+car1.price=50,000;
+car1.year=2023;
+cout<<endl;
+
+// Accessing member function
+car1.display();
+
+Car car2;
+car2.brand = "tesla";
+car2.model="c-class";
+car2.price=1,00,000;
+car2.year=2026;
+
+// Accessing member function
+car2.display();
+
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+string brand; // Data member
+string model;
+int price;
+int year;
+
+// Member function
+void display() {
+cout << "Brand: " << brand<<endl << "model: " << model<<endl << "price:"<<price<<endl<<"year:"<<year << endl;
+}
+};
+
+int main() {
+// Creating an object of the class
+Car car1;
+cout<<"enter ur brand :"<<endl;
+ cin>>car1.brand;
+ 
+ cout<<"enter ur model :"<<endl;
+ cin>>car1.model;
+ 
+ cout<<"enter the price :"<<endl;
+ cin>>car1.price;
+ 
+ cout<<"enter the year :"<<endl;
+ cin>>car1.year;
+
+// Accessing member function
+car1.display();
+
+
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+string brand; // Data member
+string model;
+int price;
+int year;
+
+// Member function
+void display() {
+cout << "Brand: " << brand<<endl << "model: " << model<<endl << "price:"<<price<<endl<<"year:"<<year << endl;
+}
+};
+
+int main() {
+// Creating an object of the class
+Car car1;
+cout<<"enter ur brand :"<<endl;
+ getline(cin,car1.brand);
+ 
+ cout<<"enter ur model :"<<endl;
+ getline(cin,car1.model);
+ 
+ cout<<"enter the price :"<<endl;
+ cin>>car1.price;
+ 
+ cout<<"enter the year :"<<endl;
+ cin>>car1.year;
+
+// Accessing member function
+car1.display();
+
+
+return 0;
+}
+
+________________________________________________________________________________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Car {
+public:
+string brand; // Data member
+string model;
+int price;
+int year;
+
+// Member function
+void display() {
+cout << "Brand: " << brand<<endl << "model: " << model<<endl << "price:"<<price<<endl<<"year:"<<year << endl;
+}
+};
+
+int main() {
+// Creating an object of the class
+Car car1;
+cout<<"enter ur brand :"<<endl;
+ getline(cin,car1.brand);
+ 
+ cout<<"enter ur model :"<<endl;
+ getline(cin,car1.model);
+ 
+ cout<<"enter the price :"<<endl;
+ cin>>car1.price;
+ 
+ cout<<"enter the year :"<<endl;
+ cin>>car1.year;
+
+// Accessing member function
+car1.display();
+
+cin.ignore();
+
+cout<<endl;
+Car car2;
+cout<<"enter ur brand :"<<endl;
+ getline(cin,car2.brand);
+ 
+ cout<<"enter ur model :"<<endl;
+ getline(cin,car1.model);
+ 
+ cout<<"enter the price :"<<endl;
+ cin>>car2.price;
+ 
+ cout<<"enter the year :"<<endl;
+ cin>>car2.year;
+
+// Accessing member function
+car2.display();
+
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class teacher {
+public:
+string name; // Data member
+string subject;
+int yr_of_experience;
+char gender;
+
+// Member function
+void display() {
+cout << "name: " << name<<endl << "subject: " << subject<<endl << "yr_of_experience:"<<yr_of_experience<<endl<<"gender:"<<gender << endl;
+}
+};
+
+int main() {
+// Creating an object of the class
+teacher teacher1;
+cout<<"enter the name:"<<endl;
+ getline(cin,teacher1.name);
+ 
+ cout<<"enter ur subject :"<<endl;
+ getline(cin,teacher1.subject);
+ 
+ cout<<"enter the yr_of_experience :"<<endl;
+ cin>>teacher1.yr_of_experience;
+ 
+ cout<<"enter the gender :"<<endl;
+ cin>>teacher1.gender;
+
+// Accessing member function
+teacher1.display();
+
+cin.ignore();
+
+
+
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+TO ACCESS PRIVATE  TO PUBLIC (GETTER AND SETTER)
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher {
+private:
+//data members
+string name;
+string subject;
+int year;
+
+public:
+void setdetail(string tname,string tsubject,int tyears)
+{
+    name=tname;
+    subject=tsubject;
+    year=tyears;
+}
+
+// Member function
+void display() {
+cout << "name: " << name<<endl << "subject: " << subject<<endl << "year:"<<year<< endl;
+}
+};
+
+int main(){
+    Teacher t1,t2,t3;
+    //assing values to object 
+    /*t1.name ="riya";
+    t1.subject="science";
+    t1.year=9;*/
+   
+    t1.setdetail("riyya","science",9);
+     t2.setdetail("geetha","cs",4);
+      t3.setdetail("jk","EEE",7);
+t1.display();
+cout<<endl;
+t2.display();
+cout<<endl;
+ t3.display();
+ cout<<endl;
+    
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+DEFAULT CONSTRUCTOR 
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class car{
+public:
+//data members
+string make;
+string model;
+int year;
+ 
+ //default constructor(no parameters)
+car(){
+    make ="bmw";
+    model="m5";
+    year=2002;
+}
+// Member function
+void displayinfo() {
+cout << "make: " << make<<endl << "model: " <<model<<endl << "year:"<<year<< endl;
+}
+};
+
+int main() {
+//creating an object using default contsructor
+car mycar;
+//displaying the information
+mycar.displayinfo();
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+Teacher()
+{
+    cout<<"I AM A DEFAULT CONSTRUCTOR"<<endl;
+}
+
+void displayinfo() 
+{
+cout << "name:"<<name<<endl;
+   cout << "dept:"<<dept<<endl;
+   cout << "experience:"<<experience<<endl;
+    cout<<"salary:"<<salary<<endl;
+}
+};
+
+int main()
+{
+//create an object 
+Teacher T1;
+
+
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+Teacher()
+{
+    name="aasta";
+    dept="arts";
+    experience=6;
+    salary=65000;
+}
+void displayinfo() 
+{ 
+cout << "name:"<<name<<endl;
+   cout << "dept:"<<dept<<endl;
+   cout << "experience:"<<experience<<endl;
+    cout<<"salary:"<<salary<<endl;
+}
+};
+
+int main()
+{
+//create an object 
+Teacher T1;
+T1.displayinfo();
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+Teacher()
+{
+    name="aasta";
+    dept="arts";
+    experience=6;
+    salary=65000;
+    cout << "Teacher name:"<<name<<endl;
+   cout << "department:"<<dept<<endl;
+   cout << "experience:"<<experience<<endl;
+   cout<<"salary:"<<salary<<endl;
+}
+};
+
+int main()
+{
+//create an object 
+Teacher T1;
+
+return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+Teacher()
+{
+    cout << "Teacher name:"<<(name="aasta")<<endl;
+    cout <<endl;
+    cout << "department:"<<(dept="arts")<<endl;
+     cout <<endl;
+    cout << "experience:"<<(experience= 6)<<endl;
+     cout <<endl;
+    cout<<"salary:"<<(salary= 65000)<<endl;
+     cout <<endl;
+}
+};
+
+int main()
+{
+//create an object 
+Teacher T1;
+
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+Teacher(string n,string d,int e, int s)
+{
+    //name=n;
+    //dept=d;
+    //experience=e;
+    //salary=s;
+    
+    cout << "Teacher name:"<<n<<endl;
+    cout << "department:"<<d<<endl;
+    cout << "experience:"<<e<<endl;
+    cout<<"salary:"<<s<<endl;
+}
+
+};
+
+int main()
+{
+//create an object 
+Teacher T1("tanjiro","sports",7,70000);
+cout<<endl;
+Teacher T2("nezuko","arts",3,10000);
+cout<<endl;
+Teacher T3("thakasi","music",5,30000);
+
+return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Teacher
+{
+public:
+//data members
+string name;
+string dept;
+int experience;
+double salary;
+
+//constructor
+
+Teacher()
+{
+    cout << "enter teacher name:"<<endl;
+    cin>>name;
+    cout <<endl;
+    cout << "enter the department:"<<endl;
+    cin>>dept;
+     cout <<endl;
+    cout << " year of experience:"<<endl;
+    cin>>experience;
+     cout <<endl;
+    cout<<"salary:"<<endl;
+    cin>>salary;
+     cout <<endl;
+     
+}
+ void displayinfo()
+ {
+    cout << "name: " << name<<endl << "dept: " <<dept<<endl << "experience:"<<experience<< endl;
+}
+
+ 
+};
+
+int main()
+{
+//create an object 
+Teacher T1;
+T1.displayinfo();
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// Class definition
+class Movie
+{
+public:
+//data members
+string title;
+string director;
+int rating;
+double duration;
+int collection;
+
+//constructor
+
+Movie()
+{
+    cout << "enter the title:"<<endl;
+     getline(cin,title);
+    cout <<endl;
+    cout << "enter the director name:"<<endl;
+     getline(cin,director);
+     cout <<endl;
+    cout << "rating of the movie:"<<endl;
+    cin>>rating;
+     cout <<endl;
+    cout<<"running time of movie:"<<endl;
+    cin>>duration;
+     cout <<endl;
+     cout<<"collecting of the movie:"<<endl;
+    cin>>collection;
+     cout <<endl;
+     
+}
+ void displayinfo()
+ {
+    cout <<"title:"<<title<<endl<<"director:"<<director<<endl<<"rating:"<<rating<< endl<<"duration"<<duration<<"collection"<<collection<<endl;
+}
+
+ 
+};
+
+int main()
+{
+//create an object 
+Movie M1;
+M1.displayinfo();
+
+return 0;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+class Parent
+{
+public:
+void food()
+{
+    cout<<"inherited.burger ";
+}
+};
+class Child:public Parent //creating the child class and inherited
+  
+{ };
+
+int main()
+{
+Child b;
+b.food();
+return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+//data members
+string title;
+string director;
+int rating;
+double duration;
+int collection;
+
+//constructor
+Movie(string t,string d,int r, double p,int c)
+{
+    //name=;
+    //dept=d;
+    //experience=e;
+    //salary=s;
+    
+    cout << "Title:"<<t<<endl;
+    cout << "director:"<<d<<endl;
+    cout << "rating:"<<r<<endl;
+    cout<<"duration:"<<p<<endl;
+     cout<<"collection:"<<c<<endl;
+}
+
+};
+
+int main()
+{
+//create an object 
+Movie M1("ATHADU","THRIVIKRAM",9,3.10,100);
+cout<<endl;
+Movie M2("ATHADU","THRIVIKRAM",9,3.10,100);
+cout<<endl;
+Movie M3("ATHADU","THRIVIKRAM",9,3.10,100);
+
+return 0;
+}
+
+
+
+
+
+
+

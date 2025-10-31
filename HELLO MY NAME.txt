@@ -1,0 +1,187 @@
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num1,num2,num3;
+    cout<< "ENTER three numbers :";
+    cin>>num1>>num2>>num3;
+    
+    //find the largest number out of 
+    if (num1>=num2 && num1>=num3)
+    {
+        cout<<num1<<" IS LARGEST NUMBER"<<endl;
+    }
+    else if (num2>=num1 && num2>=num3)
+    {
+        cout << num2 << " IS THE LARGEST NUMBER"<<endl;
+    }
+    else
+    {
+        cout<<num3<<" IS THE LARGEST NUMBER"<<endl;
+    }
+    
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    for(int i = 1 ; i <=5; i++)
+    {
+        cout<<i<<endl;
+    }
+   return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=1;
+    while(i <=18)
+    {
+        cout<<i<<endl;
+        i++;
+    }
+   return 0;
+}  
+
+
+#include<iostream>
+using namespace std;
+
+//function defination
+void greet()
+{
+ cout<<"happy birthday!!!"<<endl;
+ }
+ int main()
+    {
+        greet();//calling function
+        greet();
+    //body
+   return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+
+//function defination
+int add(int a, int b )
+{
+  return a+b;
+ }
+ int main()
+    {
+    cout<<"addition :"<<add(5,10)<<endl;
+    //body
+   return 0;
+}
+  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+
+//function defination
+ int add(int a, int b )
+{
+  return a+b;
+ } 
+ int mul(int a, int b )
+{
+  return a*b;
+ }
+ int sub(int a, int b )
+{
+  return a-b;
+ }
+ int main()
+    {
+    cout<<"addition :"<<add(5,10)<<endl;
+    cout<<"multiplication :"<<mul(5,10)<<endl;
+    cout<<"subraction:"<<sub(5,10)<<endl;
+   return 0;
+}
+  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+
+//function defination
+ int add(int a, int b )
+{
+  return a+b;
+ } 
+ int mul(int a, int b )
+{
+  return a*b;
+ }
+ int sub(int a, int b )
+{
+  return a-b;
+ }
+ int main()
+    {
+        int a,b;
+        cout<<" enter any two numbers:"<<endl;
+        cin>>a>>b;
+    cout<<"addition :"<<add(a,b)<<endl;
+    cout<<"multiplication :"<<mul(a,b)<<endl;
+    cout<<"subraction:"<<sub(a,b)<<endl;
+   return 0;
+}
+  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include<iostream>
+using namespace std;
+
+//function defination
+ int add(int a, int b )
+{
+  return a+b;
+ } 
+ int mul(int a, int b )
+{
+  return a*b;
+ }
+ int sub(int a, int b )
+{
+  return a-b;
+ }
+ float div1(int a, int b)
+ {
+     if(b==0){
+         cout<<"division by zero=infinity"<<endl;
+         return 0;
+     }
+     return (float)a/b;
+ }
+ int main()
+    {
+        int a,b;
+        cout<<" enter any two numbers:"<<endl;
+        cin>>a>>b;
+    cout<<"addition :"<<add(a,b)<<endl;
+    cout<<"multiplication :"<<mul(a,b)<<endl;
+    cout<<"subraction:"<<sub(a,b)<<endl;
+    cout<<"division:"<<div1(a,b)<<endl;
+   return 0;
+}
+  
+-------------------------------------------------------------------------------------------------------------------------------------------------

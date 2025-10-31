@@ -1,0 +1,17 @@
+loop in c++
+
+LOOPS: loops in c++ are used to execute a block of code repeatedly until a certain condition is met. they help in manage repetitive tasks 
+
+1.FOR LOOP: used when the number of iteration is known beforehand.
+2.WHILE LOOP: used when the number of iteration is not known and deperate on a condition. 
+3.DO-WHILE LOOP: similar to the while loop, but guarantees that the block the code will be executed at least once before checking the condition.
+-------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+functions in c++
+A function in c++ is a group of elements that performs a specific task and can be reused anywhere in the program.
+
+1.reausability: write once, use many times
+2.readability: code become easier 
+3.debugging
+4.modularity
+5.collaboration
