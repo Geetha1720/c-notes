@@ -1,0 +1,106 @@
+POINTERS:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+int a=10;
+//declaration
+int*ptr;
+ptr=&a;
+
+cout<<"a="<<a<<endl;
+cout<<"adress of a="<<&a<<endl;
+cout<<"adress of a through pointer="<<&ptr;
+cout<<"ptr="<<*ptr<<endl;
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+FUNCTION OVERLOADING IN POLYMORPHISM
+
+#include <iostream>
+using namespace std;
+
+class Math{
+public:
+int add(int a,int b){
+    return a+b;
+}
+double add(double a, double b){
+    return a+b;
+}
+};
+
+int main()
+{
+Math m;
+
+cout<<m.add(5,10)<<endl; //calls int version
+cout<<m.add(2.5,3.7)<<endl; //calls double version
+
+return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+RUNTIME POLYMORPHISM:
+
+#include <iostream>
+using namespace std;
+
+class Animal{
+public:
+void sound(){
+    cout<<"animal make sound"<<endl;}
+    
+};
+
+ class Dog :public Animal {
+    public:
+    void sound(){
+    cout<<"Dog barks"<<endl;}
+};
+
+int main()
+{
+Animal*a;
+Dog d;
+a=&d;
+a->sound();
+
+return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------    
+
+TO CREATE FILE
+ 
+
+ #include <iostream>
+#include <fstream>
+using namespace std;
+ 
+ int main() {
+     // create and open a file 
+     ofstream file ("data.txt");
+     //write somethig to the file
+     file << "hello students ! welcome to file handling in c++.";
+     file.close (); // close the file offer writing 
+     // read the same file 
+     ifstream readfile("data.txt");
+     string line;
+     getline (readfile,line);
+     cout<<"file content:"<<line<<endl;
+     readfile.close();
+return 0;
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+                  /.                                                              
